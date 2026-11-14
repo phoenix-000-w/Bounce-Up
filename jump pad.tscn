@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://ddkvrpwcil5tk"]
+
+[ext_resource type="Texture2D" uid="uid://deb8nbriwtlwh" path="res://Assets/Mushroom.png" id="1_ckcrg"]
+[ext_resource type="Script" uid="uid://c3ckauc41xup6" path="res://jump_pad.gd" id="1_x2icr"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3jo0e"]
+radius = 7.000004
+height = 24.0
+
+[node name="Area2D" type="Area2D" unique_id=639711076]
+script = ExtResource("1_x2icr")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=461496520]
+position = Vector2(-67.5, -100)
+scale = Vector2(0.15625, 0.16666666)
+texture = ExtResource("1_ckcrg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=317167550]
+position = Vector2(-67, -96)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_3jo0e")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

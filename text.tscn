@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://cvydo0w4p8bdy"]
+
+[ext_resource type="FontFile" uid="uid://68phpgogm6fw" path="res://Assets/pixel-game/Pixel Game.otf" id="1_aohfb"]
+[ext_resource type="Script" uid="uid://d4nynplu7qf5v" path="res://text.gd" id="1_g853r"]
+
+[node name="Node" type="CanvasLayer" unique_id=868724176]
+script = ExtResource("1_g853r")
+
+[node name="StartLabel" type="Label" parent="." unique_id=2042705083]
+offset_left = 225.0
+offset_top = 1108.0
+offset_right = 589.0
+offset_bottom = 1219.0
+theme_override_colors/font_color = Color(0.83137256, 0.90588236, 0.8627451, 1)
+theme_override_fonts/font = ExtResource("1_aohfb")
+theme_override_font_sizes/font_size = 53
+text = "GOAL 
+BOUNCE YOURSELF UP!!"
+horizontal_alignment = 1
+
+[node name="EndLabel" type="Label" parent="." unique_id=660884226]
+visible = false
+texture_filter = 1
+offset_top = 223.0
+offset_right = 345.0
+offset_bottom = 314.0
+theme_override_colors/font_color = Color(0.787277, 0.9613113, 0.38470235, 1)
+theme_override_fonts/font = ExtResource("1_aohfb")
+theme_override_font_sizes/font_size = 43
+text = "YOU FINISHED THE GAME
+GOOD JOB!!"
+horizontal_alignment = 1
